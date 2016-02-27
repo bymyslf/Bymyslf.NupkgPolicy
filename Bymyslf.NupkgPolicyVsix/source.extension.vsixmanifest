@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="Bymyslf.NupkgPolicy.9faa5314-72b7-465a-bf5c-9363ac2e0292" Version="1.0.2" Language="en-US" Publisher="Luís Barbosa" />
+    <DisplayName>Nuget Package Policy</DisplayName>
+    <Description xml:space="preserve">Nuget Package Check-in Policy</Description>
+    <License>license.txt</License>
+    <Tags>Nuget;Checkin Policy;Visual Studio;C#;Checkin Policies</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,15.0)" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="policies.pkgdef" />
+  </Assets>
+</PackageManifest>
